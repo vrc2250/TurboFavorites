@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Turbo Favorites — Options</title>
+    <style>
+      body {
+        font: message-box;
+        font-size: 14px;
+        margin: 1.2em 1.5em;
+        color: #1a1a1a;
+      }
+      h1 {
+        font-size: 1.3em;
+        margin: 0 0 .2em;
+      }
+      p.hint {
+        color: #555;
+        margin: 0 0 1em;
+      }
+      #tree ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 1.3em;
+      }
+      #tree > ul {
+        padding-left: 0;
+      }
+      #tree li {
+        margin: .15em 0;
+      }
+      label {
+        cursor: pointer;
+      }
+      .account {
+        font-weight: 600;
+        margin-top: .6em;
+      }
+      .toolbar {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        padding: .6em 0;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: .8em;
+      }
+      button {
+        font: inherit;
+        padding: .35em .9em;
+        margin-right: .5em;
+        cursor: pointer;
+      }
+      #status {
+        margin-left: .5em;
+        color: #137333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Turbo Favorites</h1>
+    <p class="hint">
+      Tick the folders you want pinned. Each one appears in the email
+      right-click menu under <b>“Turbo Favorites”</b>, with all of its
+      subfolders cascading underneath.
+    </p>
+    <div class="toolbar">
+      <button id="save">Save favorites</button>
+      <button id="reload">Reload folder list</button>
+      <span id="status"></span>
+    </div>
+    <div id="tree">Loading folders…</div>
+    <script src="options.js"></script>
+  </body>
+</html>

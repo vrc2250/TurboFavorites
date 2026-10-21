@@ -1,0 +1,16 @@
+# Build artifacts / packaged add-on
+*.xpi
+
+# Local backups
+backups/
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Python (icon generator)
+__pycache__/
+*.pyc
+
+# OS cruft
+.DS_Store
+Thumbs.db
