@@ -19,6 +19,20 @@ stable MailExtension APIs — no "experiment" code.
   that parent folder use its **“→ Move into …”** entry at the top of the submenu.
 - Works on multi-selection (moves all selected messages).
 
+## Screenshots
+
+**Right-click → Turbo Favorites: favorites and their subfolders cascade**
+
+![Turbo Favorites cascade in the message right-click menu](TurboScreenshots/TurboMoveTo-1.png)
+
+**Pick your favorite folders in the options page**
+
+![Turbo Favorites options page with the folder tree](TurboScreenshots/TuboPluginSettings-3.png)
+
+**Installed in the Add-ons Manager**
+
+![Turbo Favorites listed in the Thunderbird Add-ons Manager](TurboScreenshots/TurboPlugin-2.png)
+
 ## Install (from a release)
 
 1. Download the latest **`turbo-favorites.xpi`** from the
