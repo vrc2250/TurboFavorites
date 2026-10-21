@@ -44,6 +44,12 @@ move, file, folders, subfolders, favorites, filing, right-click, context menu, q
 ### License
 MIT
 
+### Homepage URL
+https://github.com/vrc2250/TurboFavorites
+
+### Support URL
+https://github.com/vrc2250/TurboFavorites/issues
+
 ### Description (long — basic HTML allowed on ATN)
 
 **Turbo-charge the way you file email.**
@@ -151,4 +157,6 @@ PNG or JPG; a clean, cropped window looks best.
 | Author | Mark LeBlanc |
 | License | MIT |
 | Permissions | accountsRead, menus, messagesRead, messagesMove, storage |
+| Homepage | https://github.com/vrc2250/TurboFavorites |
+| Support | https://github.com/vrc2250/TurboFavorites/issues |
 | Upload file | /home/mark/Development/turbo-favorites.xpi |

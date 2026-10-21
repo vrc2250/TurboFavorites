@@ -8,6 +8,9 @@ mail without drilling down from the account root every time.
 Targets Thunderbird **128+** (built and tested against 153 ESR). Uses only
 stable MailExtension APIs — no "experiment" code.
 
+**Homepage / source:** https://github.com/vrc2250/TurboFavorites
+**Downloads:** https://github.com/vrc2250/TurboFavorites/releases
+
 ## What it does
 
 - Right-click a message → **Turbo Favorites** → hover a pinned folder → its
@@ -15,6 +18,17 @@ stable MailExtension APIs — no "experiment" code.
 - A folder that has subfolders is itself a submenu; to drop mail directly into
   that parent folder use its **“→ Move into …”** entry at the top of the submenu.
 - Works on multi-selection (moves all selected messages).
+
+## Install (from a release)
+
+1. Download the latest **`turbo-favorites.xpi`** from the
+   [Releases page](https://github.com/vrc2250/TurboFavorites/releases).
+2. In Thunderbird: **☰ menu → Add-ons and Themes → gear ⚙ → Install Add-on From File…**
+3. Select the downloaded `.xpi` and confirm the permission prompt.
+
+Installing an unsigned `.xpi` requires an **ESR / Daily** build with
+`xpinstall.signatures.required` set to `false` in the Config Editor (until the
+add-on is signed on addons.thunderbird.net).
 
 ## Install (temporary, for testing)
 
@@ -32,18 +46,19 @@ Temporary add-ons are removed when Thunderbird restarts — fine for trying it o
 2. Tick the folders you want pinned, then **Save favorites**.
 3. The right-click menu updates immediately.
 
-## Package for permanent install
+## Build from source
 
-Zip the contents of this folder (not the folder itself) into an `.xpi`:
+Zip the add-on contents (not the folder itself) into an `.xpi`:
 
 ```sh
-cd /home/mark/Development/moveto
-zip -r -FS ../turbo-favorites.xpi manifest.json background.js options.html options.js README.md
+cd TurboFavorites
+zip -r -FS ../turbo-favorites.xpi \
+  manifest.json background.js options.html options.js LICENSE README.md icons/
 ```
 
-Permanent installation of an unsigned `.xpi` requires an **ESR / Daily** build
-with `xpinstall.signatures.required` set to `false` in Config Editor, or
-distribution signing via addons.thunderbird.net.
+Then install the resulting `.xpi` via the steps above. The icons are generated
+by `make_icon.py` (requires Python + Pillow) — regenerate with
+`python3 make_icon.py` if you change the artwork.
 
 ## Files
 
